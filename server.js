@@ -50,7 +50,7 @@ const url = require("url");
 
 const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url, true);
-    const pathname = parsedUrl.pathname; 
+    const pathname = parsedUrl.pathname;
 
     console.log(req.method, req.url);
 
@@ -93,6 +93,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(3006, () => {
-    console.log("Server running on 3006");
+server.listen(3001, () => {
+    console.log("Server running on 3001");
 });
